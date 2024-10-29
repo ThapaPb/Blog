@@ -6,5 +6,5 @@
 **A live demo page can be visited here(not ready) -> [Website]**
 
 _It should look something like this:_
-![Preview](C:\Users\prabi\Blog\Blog\websitePreview.jpg)
+![Preview](websitePreview.jpg)
 
