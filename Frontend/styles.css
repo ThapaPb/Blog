@@ -1,0 +1,87 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3f0f8; /* Light background to match the aesthetic */
+    color: #333;
+}
+
+/* Navigation Bar */
+header nav {
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+.cover-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text {
+    margin-left: 2rem;
+}
+
+.intro-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5rem;
+    color: #4a4a4a;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.intro-text button {
+    background-color: #5c85d6;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.intro-text button:hover {
+    background-color: #4a6cb3;
+}
+
