@@ -1,0 +1,110 @@
+/* Body and Background */
+body {
+    font-family: 'Georgia', serif;
+    color: #3b3b3b;
+    background-color: #faf3e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Entry Header */
+.entry-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.entry-header h1 {
+    font-size: 2.5em;
+    color: #4a4a4a;
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #7d7d7d;
+    font-style: italic;
+}
+
+/* Entry Content */
+.entry-content {
+    max-width: 700px;
+    line-height: 1.8;
+}
+
+.entry-text p {
+    text-indent: 30px;
+    margin-bottom: 1em;
+}
+
+/* Visual Element */
+.visual-element {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.decorative-image {
+    width: 100%;
+    max-width: 600px;
+    border: 2px solid #d3c3a3;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+}
+
+/* Audio Player Styling */
+.background-audio {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Navigation Buttons */
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.home-button, .next-chapter-button {
+    background-color: #4a4a4a;
+    color: #faf3e0;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover, .next-chapter-button:hover {
+    background-color: #6b6b6b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 30px;
+}
+
+
+/* Styling for Reflective Prompts */
+.thought-prompt {
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 4px solid #d3c3a3;
+    background-color: #f7f1e3;
+}
