@@ -4,7 +4,7 @@
 
 
 ## Blogsite Overview
-**Live Demo (Coming Soon)** ➔ [Website Preview](https://thapapb.github.io/LandingPage/)
+**Live Demo (Coming Soon)** ➔ [Website Preview](https://thapapb.github.io/Blog/Frontend/index.html)
 
 ![Preview](websitePreview.jpg)
 
