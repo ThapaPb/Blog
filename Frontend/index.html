@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Memorial Blog</title>
+    <title>The Memorial Blog - Book Cover</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-<!-- Navigation Bar -->
-<header>
-    <nav class="header nav">
-        <div class="logo">
-            <img src = "logo.png" alt="Blog logo">
-            <span>The Memorial Blog</span>
-        </div>
-    </nav>
-</header>
-
 <body>
 
-    <!-- Main Content Section -->
-    <section class="cover">
-        <div class="cover-image">
-            <img src="cover image.jpg" alt="Cover Image">
-        </div>
-        <div class="cover-content">
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Blog Logo" class="logo-img">
+                <span>The Memorial Blog</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Book Cover Section -->
+    <section class="book-cover">
+        <div class="left-panel">
             <h1>The Lament of Loss</h1>
-            <h2> <div class="author"> - Prabigya Thapa</div></h2>
-            <p>A tribute to my mother, life, loss, and enduring memories.</p>
-            <button onclick="goToContents()">Explore</button>
+            <p class ="author"> -Prabigya Thapa</p>
+            <br>
+            <p class="subtitle">A tribute to my mother, life, loss, and enduring memories.</p>
+            <button onclick="window.location.href='table of contents/toc.html'" class="button">Explore</button>
+
+        </div>
+        <div class="right-panel">
+            <img src="cover image.jpg" alt="Mandala Cover" class="cover-image">
         </div>
     </section>
 
@@ -37,7 +38,5 @@
         <p>© 2024 The Memorial Blog</p>
     </footer>
 
-    <!-- Link to JavaScript -->
-    <script src="scripts/app.js"></script>
 </body>
 </html>

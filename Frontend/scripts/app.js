@@ -9,3 +9,12 @@ function goToContents() {
         window.location.href = "./table of contents/toc.html" // Adjust this path to the Table of Contents page
     }, 300); // Delay to allow for transition
 }
+
+// app.js
+function navigateTo(url) {
+    document.body.classList.add("fade-out");
+    setTimeout(() => {
+        window.location.href = url;
+    }, 500); // Adjust timing as needed
+}
+

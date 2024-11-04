@@ -1,54 +1,53 @@
-/* Reset Styles */
+/* Reset and Basic Styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
-    font-family: 'Playfair Display', serif; /* Choose a classic serif font */
-    background-color: #1c1b1b; /* Dark background for classic elegance */
+    font-family: 'Georgia', serif;
+    background-image: url('paper.jpg');
     color: #eaeaea;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
 }
 
-/* Navigation Bar */
-
+/* Centered Navigation Bar */
 header {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-top: 0rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 header nav {
-    width: 80%;
+    width: 90%;
     padding: 1.5rem 0rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff81;
+    background-color: #9360017e;;
     border-radius: 4px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+
 .logo {
     display: flex;
     align-items: center;
+    
 }
 
-.logo img {
-    width: 50px; /* Adjust to desired logo size */
-    height: 50px; /* Adjust to desired logo size */
-    border-radius: 50%; /* Makes the image circular */
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     margin-right: 10px;
-    border: 2px solid #f0d891; /* Border around the circle */
+    border: solid wheat 2px;
 }
 
 .logo span {
@@ -57,79 +56,97 @@ header nav {
     font-weight: bold;
 }
 
-/* Cover Section */
-.cover {
-    width: 80%;
+/* Book Cover Layout */
+.book-cover {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
+    align-items: stretch;
     max-width: 1000px;
     margin: auto;
-    padding: 50px;
-    gap: 2rem;
+    padding: 2rem;
+    width: 80%;
+    background-color: #9360017e;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    border: 0.7px solid wheat;
 }
 
-.cover-image img {
-    width: 500px; /* Set appropriate book cover width */
-    height: auto; /* Keeps image proportional */
-    border-radius: 5px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
-    border: 1px solid #d4c3a3; /* Antique gold border */
+.left-panel {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.cover-content {
-    max-width: 600px;
+.left-panel h1 {
+    font-size: 2.5em;
     color: #eaeaea;
+    margin-bottom: 1rem;
 }
 
+.subtitle {
+    font-size: 1.2em;
+    color: #cccccc;
+    margin-bottom: 2rem;
+}
 .author {
     text-align: right;
+    font-size: 1.4em;
 }
-
-.cover-content h1 {
-    font-size: 2.6em;
-    font-weight: bold;
-    margin-bottom: 0.2em;
-    color: #ffffff;
-}
-
-.cover-content h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    font-style: normal;
-    color: #d0d0d0;
-    text-align: right;
-}
-
-.cover-content p {
-    font-size: 1.1em;
-    margin-bottom: 1.5rem;
-    color: #cccccc;
-}
-
-/* Button Styling */
-.cover-content button {
-    background-color: transparent;
-    color: #eaeaea;
-    padding: 0.8rem 2rem;
+.button {
+    padding: 0.8rem 1.5rem;
     font-size: 1em;
-    border: 2px solid #eaeaea;
-    border-radius: 30px;
+    background-color: #3d3206;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: fit-content;
+    border: 0.7px solid wheat;
+    font-family: 'Georgia', serif;
 }
 
-.cover-content button:hover {
-    background-color: #eaeaea;
-    color: #1c1b1b;
+.button:hover {
+    background-color: #d4d4d4;
+    color: black;
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover-image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border: solid 2px wheat;
 }
 
 /* Footer */
 footer {
     text-align: center;
     font-size: 0.8em;
-    color: #d0d0d0;
-    padding: 1rem;
+    color: #888;
+    margin-top: 2rem;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .book-cover {
+        flex-direction: column;
+    }
+
+    .left-panel {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .right-panel {
+        padding: 1rem;
+    }
+}
