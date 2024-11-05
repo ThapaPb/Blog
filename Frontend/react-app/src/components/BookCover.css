@@ -1,0 +1,57 @@
+.book-cover {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f4e1d2; /* Warm Beige */
+}
+
+.left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+    color: #3b2f2f; /* Deep Brown */
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #d96459; /* Rust Orange */
+}
+
+.author {
+    font-style: italic;
+    color: #c7ad88; /* Soft Olive */
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #3b2f2f; /* Deep Brown */
+    color: #f4e1d2; /* Warm Beige */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cover-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #dda15e; /* Muted Gold border */
+
+}
