@@ -15,7 +15,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Georgia', serif;
-  background-image: url('paper.jpg');
   color: #eaeaea;
   display: flex;
   flex-direction: column;
@@ -60,7 +59,7 @@ header nav {
 
 .logo span {
   font-size: 1.8em;
-  color: #f0d891;
+  color: #ffd65b;
   font-weight: bold;
 }
 
@@ -92,6 +91,12 @@ header nav {
   margin-bottom: 1rem;
 }
 
+.title {
+  font-size: 5.5em;
+  color: #45211e; /* Rust Orange */
+}
+
+
 .subtitle {
   font-size: 1.2em;
   color: #cccccc;
@@ -101,6 +106,7 @@ header nav {
   text-align: right;
   font-size: 1.4em;
 }
+
 .button {
   padding: 0.8rem 1.5rem;
   font-size: 1em;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './TableOfContents.css';
 
 function TableOfContents() {
@@ -8,17 +9,26 @@ function TableOfContents() {
         // Add more chapters as needed
     ];
 
+    const navigate = useNavigate();
+
     return (
         <section className="toc">
             <h1>Table of Contents</h1>
             <div className="chapter-list">
                 {chapters.map((chapter) => (
-                    <div key={chapter.id} className="chapter">
-                        <span className="chapter-title">{`Chapter ${chapter.id}: ${chapter.title}`}</span>
-                        <span className="chapter-date">{chapter.date}</span>
-                    </div>
+                     <div key={chapter.id} className="chapter" onClick={() => navigate(`/entry${chapter.id}`)}>
+                     <span>{`Chapter ${chapter.id}: ${chapter.title}`}</span>
+                     <span>{chapter.date}</span>
+                 </div> 
+
                 ))}
+
             </div>
+
+            <button className="home-button" onClick={() => navigate('/')}>Home</button>
+        
         </section>
     );
 }
+
+export default TableOfContents;

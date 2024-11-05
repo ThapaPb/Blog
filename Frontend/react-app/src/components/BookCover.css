@@ -3,6 +3,7 @@
     justify-content: space-between;
     padding: 50px;
     background-color: #f4e1d2; /* Warm Beige */
+    border: 1px solid #3b2f2f; /* Deep Brown */;
 }
 
 .left-panel {
@@ -21,14 +22,22 @@
     justify-content: center;
 }
 
-h1 {
-    font-size: 2.5em;
-    color: #d96459; /* Rust Orange */
+.title {
+    font-size: 5.5em;
+    color: #45211e; /* Rust Orange */
 }
+
+.book-cover h1 {
+    color: #8B4513; /* Dark autumn color */
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
 
 .author {
     font-style: italic;
-    color: #c7ad88; /* Soft Olive */
+    color: #bd9866; /* Soft Olive */
 }
 
 .subtitle {
@@ -44,6 +53,14 @@ h1 {
     background-color: #3b2f2f; /* Deep Brown */
     color: #f4e1d2; /* Warm Beige */
     border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color: #d96459; /* Example autumn color */
+    color: wheat;
+    border: 1px solid wheat;
     cursor: pointer;
     border-radius: 5px;
 }

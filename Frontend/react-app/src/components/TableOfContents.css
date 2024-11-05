@@ -26,7 +26,13 @@ h1 {
     background-color: #fdf1e5; /* Slightly lighter beige for contrast */
     margin-bottom: 10px;
     border-radius: 5px;
+    cursor: pointer;
 
+}
+.chapter:hover {
+    background-color: #3b2f2f;
+    color: white;
+     
 }
 
 .chapter-title {
@@ -37,3 +43,21 @@ h1 {
 .chapter-date {
     color: #dda15e; /* Muted Gold */
 }
+
+
+.home-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #d96459; /* Example autumn color */
+    color: wheat;
+    border: 1px solid wheat;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.home-button:hover {
+    background-color: #3b2f2f; /* Darker shade on hover */
+    color: white;
+}
+

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     padding: 20px;
-    border-bottom: 2px solid #3b2f2f; /* Deep Brown border */
+    border: 1px solid #3b2f2f; /* Deep Brown border */
 }
 
 .logo {
@@ -15,8 +15,9 @@
 }
 
 .logo-img {
-    height: 40px;
+    height: 50px;
     margin-right: 10px;
     border-radius: 50%;
-    border: 2px solid #dda15e; /* Muted Gold border */
+    border: 1px solid #3b2f2f; /* Deep Brown border */
 }
+

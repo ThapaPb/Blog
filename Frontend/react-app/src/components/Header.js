@@ -6,7 +6,7 @@ function Header() {
         <header>
             <nav className="navbar">
                 <div className="logo">
-                    <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Blog Logo" className="logo-img" />
+                    <img src={`${process.env.PUBLIC_URL}/assets/logo.png`} alt="Blog Logo" className="logo-img" />
                     <span>The Memorial Blog</span>
                 </div>
             </nav>
