@@ -3,6 +3,8 @@
     text-align: center;
     background-color: #f4e1d2; /* Warm Beige */
     color: #3b2f2f; /* Deep Brown */
+    border: #3b2f2f 1px solid;
+    border-radius: 5px;
 }
 
 h1 {
