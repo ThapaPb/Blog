@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# The Memorial Blog Frontend
+### This is the frontend of The Memorial Blog project, a React-based application designed to provide a seamless, book-like experience for readers. It connects to a Django backend for dynamic content, with blog entries that form an interconnected, reflective story.
+## Features
+1. Autumn-Inspired Theme: A warm, cozy aesthetic inspired by autumn colors.
+2. Dynamic Table of Contents: Lists blog entries as chapters, sorted chronologically.
+3. Individual Entry Pages: Each entry is styled with ample spacing, resembling a book layout.
+4. Home Navigation: Easily return to the main page or move between chapters.
+5. Backend Integration: Fetches dynamic content from the Django backend API.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Structure
+frontend/
+├── public/                      # Static assets
+│   ├── assets/                  # Folder for images, icons, and other assets
+│   ├── index.html               # Main HTML file for React to mount on
+│   └── ...
+├── src/                         # Source folder for React components
+│   ├── components/              # Main components used in the app
+│   │   ├── BookCover.js         # Cover page (homepage)
+│   │   ├── TableOfContents.js   # Dynamic Table of Contents
+│   │   ├── Entry.js             # Entry component for individual blog pages
+│   │   └── ...
+│   ├── App.js                   # Main app file with routes
+│   ├── index.js                 # Entry point for the React app
+│   └── ...
+├── Dockerfile                   # Docker configuration for frontend deployment
+├── package.json                 # NPM dependencies and scripts
+└── ...
 
-## Available Scripts
+## Prerequisites
+Node.js: Make sure you have Node.js installed. Download here.
+Docker: If deploying with Docker, ensure Docker is installed. Download here.
+Setup and Installation
+Clone the Repository:
+bash
+Copy code
+git clone https://github.com/your-username/your-repository.git
+cd your-repository/frontend
 
-In the project directory, you can run:
 
-### `npm start`
+Install Dependencies:
+bash
+Copy code
+npm install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Environment Variables:
+If needed, create a .env file to store any environment-specific variables.
+Update Backend URL:
+In TableOfContents.js and Entry.js, ensure the backend API URL is set to the production server for deployment:
+javascript
+Copy code
+axios.get('https://your-backend-url/api/entries/')
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Running the App Locally
+To run the app in development mode:
+bash
+Copy code
+npm start
 
-### `npm run build`
+Open http://localhost:3000 to view it in your browser.
+The page will automatically reload if you make edits.
+Building the App for Production
+To build a production-ready version of the app, run:
+bash
+Copy code
+npm run build
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This will bundle React in production mode and optimize the build for deployment in the build/ folder.
+Docker Deployment
+Build the Docker Image:
+bash
+Copy code
+docker build -t memorial-blog-frontend .
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Run the Docker Container:
+bash
+Copy code
+docker run -p 3000:80 memorial-blog-frontend
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Deployment
+To deploy the application:
+Set up a deployment service, such as Render or DigitalOcean, with Docker support.
+Use the Docker configuration in this project to deploy a full-stack environment, linking the frontend to the backend.
+Contributing
+If you'd like to contribute:
+Fork this repository.
+Create a branch: git checkout -b feature-name.
+Make your changes and commit them: git commit -m 'feature details'.
+Push to the branch: git push origin feature-name.
+Open a Pull Request.
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
