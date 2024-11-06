@@ -4,7 +4,7 @@
 
 
 ## Blogsite Overview
-**Live Demo (Coming Soon)** ➔ [Website Preview](https://thapapb.github.io/LandingPage/)
+**Live Demo** ➔ [Website Preview](https://thapapb.github.io/LandingPage/)
 
 ![Preview](websitePreview.jpg)
 
@@ -49,6 +49,6 @@ This blog project is organized as follows:
 
 - **Frontend**: HTML, CSS, JavaScript (React/Vue optional)
 - **Backend**: Django or Express.js (Node.js), PostgreSQL/MySQL
-- **Deployment**: GitHub Pages (for static demo), Cloud Hosting for dynamic functionality
+- **Deployment**: GitHub Pages (for static demo), Cloud Hosting for dynamic functionality(Render)
 
 ---
