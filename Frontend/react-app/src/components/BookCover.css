@@ -1,0 +1,74 @@
+.book-cover {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f4e1d2; /* Warm Beige */
+    border: 1px solid #3b2f2f; /* Deep Brown */;
+}
+
+.left-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30px;
+    color: #3b2f2f; /* Deep Brown */
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 5.5em;
+    color: #45211e; /* Rust Orange */
+}
+
+.book-cover h1 {
+    color: #8B4513; /* Dark autumn color */
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+
+
+.author {
+    font-style: italic;
+    color: #bd9866; /* Soft Olive */
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #3b2f2f; /* Deep Brown */
+    color: #f4e1d2; /* Warm Beige */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color: #d96459; /* Example autumn color */
+    color: wheat;
+    border: 1px solid wheat;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cover-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #dda15e; /* Muted Gold border */
+
+}

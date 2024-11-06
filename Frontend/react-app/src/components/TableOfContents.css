@@ -1,0 +1,65 @@
+.toc {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4e1d2; /* Warm Beige */
+    color: #3b2f2f; /* Deep Brown */
+    border: #3b2f2f 1px solid;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #d96459; /* Rust Orange */
+}
+
+.chapter-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chapter {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 15px;
+    border-bottom: 1px solid #c7ad88; /* Soft Olive */
+    background-color: #fdf1e5; /* Slightly lighter beige for contrast */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.chapter:hover {
+    background-color: #3b2f2f;
+    color: white;
+     
+}
+
+.chapter-title {
+    font-weight: bold;
+    color: #3b2f2f; /* Deep Brown */
+}
+
+.chapter-date {
+    color: #dda15e; /* Muted Gold */
+}
+
+
+.home-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #d96459; /* Example autumn color */
+    color: wheat;
+    border: 1px solid wheat;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.home-button:hover {
+    background-color: #3b2f2f; /* Darker shade on hover */
+    color: white;
+}
+
